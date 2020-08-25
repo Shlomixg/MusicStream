@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/music_controls_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:elevation="3dp">
+
+    <ImageButton
+        android:id="@+id/skip_prev_btn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_skip_previous_24"
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="Skip Previous"
+        android:onClick="onSkipPrevBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/stop_btn"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        />
+
+    <ImageButton
+        android:id="@+id/stop_btn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_stop_24"
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="Stop"
+        android:onClick="onStopBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/skip_prev_btn"
+        app:layout_constraintEnd_toEndOf="@id/play_btn"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        />
+
+    <ImageButton
+        android:id="@+id/play_btn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_play_arrow_24"
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="Play/Pause"
+        android:onClick="onPlayPauseBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/stop_btn"
+        app:layout_constraintEnd_toEndOf="@id/skip_next_btn"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        />
+
+    <ImageButton
+        android:id="@+id/skip_next_btn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_skip_next_24"
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="Skip Next"
+        android:onClick="onSkipNextBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/play_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

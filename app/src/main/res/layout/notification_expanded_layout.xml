@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/notif_song_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            />
+
+        <TextView
+            android:id="@+id/notif_artist_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/notif_skip_prev_btn"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_skip_previous_24"
+            android:contentDescription="Skip Previous"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <ImageButton
+            android:id="@+id/notif_stop_btn"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_stop_24"
+            android:contentDescription="Stop"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <ImageButton
+            android:id="@+id/notif_pause_btn"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_pause_24"
+            android:contentDescription="Pause"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <ImageButton
+            android:id="@+id/notif_play_btn"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_play_arrow_24"
+            android:contentDescription="Play"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <ImageButton
+            android:id="@+id/notif_skip_next_btn"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_skip_next_24"
+            android:contentDescription="Skip Next"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
